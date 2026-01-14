@@ -12,7 +12,10 @@ export default function Quiz() {
     fetch("https://opentdb.com/api.php?amount=5&type=multiple")
       .then((res) => res.json())
       .then((data) => {
-        if (!data.results) return;
+        if (!data.results)  {
+          setError("Failed to load questions");
+          return;
+        }
 
         const updatedQuestions = data.results.map((question) => {
           const mergeArr = [
@@ -27,6 +30,10 @@ export default function Quiz() {
           };
         });
         setQuestions(updatedQuestions);
+      })
+       .catch((err) => {
+        setError("Error fetching questions. Please try again later.");
+        console.error(err);
       });
   }, []);
 
@@ -80,6 +87,7 @@ export default function Quiz() {
 
   return (
     <main>
+      
       {questions.length === 0 ? (
         <div>Loading...</div>
       ) : (
