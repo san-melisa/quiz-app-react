@@ -13,7 +13,7 @@ body {
 }
 
 main{
-  width: min(90vmin, 550px);
+  width: min(90vmin, 600px);
   min-height: 100vh;
   background-color: #FFFFFF;
   display: flex;
@@ -63,7 +63,7 @@ form {
 }
 
 .btn-submit {
-  font-size: 0.5em;
+  font-size: 1em;
   font-weight: 400;
   padding: 1.1em 2.2em;
 
@@ -76,7 +76,7 @@ fieldset {
 }
 
 legend {
-  font-size: 1.52em;
+  font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
