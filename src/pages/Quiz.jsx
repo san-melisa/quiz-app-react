@@ -71,6 +71,12 @@ export default function Quiz() {
     setIsSubmitted(true);
   }
 
+  function playAgain() {
+    setSelectedAnswers({});
+    setIsSubmitted(false);
+    setScore(0);
+  }
+
 
   return (
     <main>
@@ -123,7 +129,7 @@ export default function Quiz() {
           {isSubmitted && (
             <>
               <p>You scored {score}/5 correct answers</p>
-              <button className="btn btn-submit">Play again</button>
+              <button type="button" className="btn btn-submit" onClick={playAgain}>Play again</button>
             </>
           )}
         </form>
