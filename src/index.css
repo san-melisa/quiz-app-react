@@ -13,7 +13,7 @@ body {
 }
 
 main{
-  width: min(90vmin, 550px);
+  width: min(130vmin, 550px);
   aspect-ratio: 1 / 1;
   background-color: #FFFFFF;
   display: flex;
@@ -31,11 +31,11 @@ main{
   background-size: 90px, 100px;
 }
 
-main > button {
+.btn {
   background-color: #4D5B9E;
   color: #F5F7FB;
   border: none;
-  border-radius: 9px;
+  border-radius: 6px;
   padding: 0.7em 2.5em;
   display: inline-block;
   width: auto;
@@ -48,4 +48,72 @@ main > h1 {
 main > p {
   margin-top: 0.5em;
   margin-bottom: 1.4em;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+
+
+form {
+  width: 100%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-submit {
+  font-size: 0.5em;
+  font-weight: 400;
+  padding: 1.1em 2.2em;
+
+}
+
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+legend {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+label {
+  font-size: 0.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+
+}
+
+/* label:hover{
+  background-color: #D6DBF5;
+  border: none;
+} */
+
+/*radio button is hidden but accessable*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/*label looks like button*/
+.option-label {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #DBDEF0;
+  margin-top: 0.8em;
+
 }
