@@ -13,7 +13,7 @@ body {
 }
 
 main{
-  width: 130vmin;
+  width: 90vmin;
   aspect-ratio: 1 / 1;
   background-color: #FFFFFF;
   display: flex;
