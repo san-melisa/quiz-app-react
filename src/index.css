@@ -13,7 +13,8 @@ body {
 }
 
 main{
-  width: min(130vmin, 550px);
+  width: 100%;
+  max-width: 550px;
   min-height: 100vh;
   background-color: #FFFFFF;
   display: flex;
