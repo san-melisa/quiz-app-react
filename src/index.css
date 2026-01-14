@@ -87,10 +87,7 @@ label {
 
 }
 
-/* label:hover{
-  background-color: #D6DBF5;
-  border: none;
-} */
+
 
 /*radio button is hidden but accessable*/
 .visually-hidden {
@@ -110,6 +107,24 @@ label {
   cursor: pointer;
   background-color: white;
 }
+
+.selected{
+  background-color: #D6DBF5;
+  border: none;
+} 
+
+.correct {
+  border: none;
+  background-color: #94D7A2;
+
+}
+
+.wrong{
+    border: none;
+    background-color: #F8BCBC;
+}
+
+
 
 hr {
   border: none;
