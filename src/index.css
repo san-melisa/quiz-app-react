@@ -13,8 +13,8 @@ body {
 }
 
 main{
-  width: 90vmin;
-  aspect-ratio: 1 / 1;
+  width: min(90vmin, 550px);
+  min-height: 100vh;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -76,12 +76,12 @@ fieldset {
 }
 
 legend {
-  font-size: 0.8em;
+  font-size: 1.52em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 label {
-  font-size: 0.5em;
+  font-size: 1em;
   margin-right: 1.5em;
   margin-bottom: 1em;
 
@@ -131,4 +131,62 @@ hr {
   border-top: 1px solid #DBDEF0;
   margin-top: 0.8em;
 
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+  body {
+    padding: 1em;
+    align-items: flex-start;
+  }
+
+  main {
+    width: 100%;
+    min-height: auto;
+    padding: 1em 0;
+    background-size: 60px, 70px;
+  }
+
+  form {
+    padding: 1.5em;
+  }
+
+  main > h1 {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+
+  main > p {
+    font-size: 0.7em;
+    margin-bottom: 1em;
+  }
+
+  legend {
+    font-size: 0.7em;
+    margin-bottom: 0.8em;
+  }
+
+  label {
+    font-size: 0.55em;
+    margin-right: 0.8em;
+    margin-bottom: 0.8em;
+    display: inline-block;
+  }
+
+  .option-label {
+    padding: 0.8em 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .btn-submit {
+    font-size: 0.55em;
+    padding: 1em 1.8em;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
