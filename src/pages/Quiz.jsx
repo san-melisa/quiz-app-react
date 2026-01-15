@@ -13,7 +13,7 @@ export default function Quiz() {
       .then((res) => res.json())
       .then((data) => {
         if (!data.results)  {
-          setError("Failed to load questions");
+          console.error("Failed to load questions");
           return;
         }
 
@@ -32,8 +32,7 @@ export default function Quiz() {
         setQuestions(updatedQuestions);
       })
        .catch((err) => {
-        setError("Error fetching questions. Please try again later.");
-        console.error(err);
+        console.error("Error fetching questions. Please try again later.", err);
       });
   }, []);
 
